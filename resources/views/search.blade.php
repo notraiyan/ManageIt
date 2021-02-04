@@ -1,6 +1,6 @@
 @extends('master')
 @section("content")
-<h3 style="color:grey;padding-left:15px;">All Products</h3>
+<h3 style="color:grey;padding-left:15px;">Searched Products</h3>
 <p style="background-color:grey;">.</p>
 <div class="products">
     @foreach($products as $item)
