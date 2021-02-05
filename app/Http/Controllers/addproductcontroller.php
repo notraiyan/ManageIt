@@ -15,7 +15,7 @@ class addproductcontroller extends Controller
         {
             $product= new product;
             $product->name=$req->name;
-            $product->price=intval($req->price);
+            $product->price=$req->price;
             $product->image=$req->image;
             $product->expdate=$req->expdate;
             $product->save();

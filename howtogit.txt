@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "partially done"
+git remote add origin https://https://github.com/raiyan-ahmed/ManageIt.git
+git push -u origin master
