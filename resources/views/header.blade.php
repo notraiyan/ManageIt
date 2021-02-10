@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="font-family:Brush Script MT;font-size: 60px;">ManageIt</a>
+      <a class="navbar-brand" href="/" style="font-family:Brush Script MT;font-size: 60px;">ManageIt</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,11 +17,7 @@
         <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="add">Add Product</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filter <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">By Price</a></li>
-            <li><a href="#">By Expiry Date</a></li>
-          </ul>
+          <a href="/filter">Filter</a>
         </li>
       </ul>
       <form class="navbar-form navbar-left"  action="/search">

@@ -19,6 +19,9 @@ use App\Http\Controllers\addproductcontroller;
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/filter', function () {
+    return view('filter');
+});
 Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
@@ -31,4 +34,5 @@ Route::post("/addproduct",[addproductcontroller::class,'addproduct']);
 Route::get("/search",[productcontroller::class,'search']);
 Route::get("/edit/{id}",[productcontroller::class,'edit']);
 Route::post("/editproduct",[addproductcontroller::class,'editproduct']);
+Route::post("/filtered",[productcontroller::class,'filtered']);
 

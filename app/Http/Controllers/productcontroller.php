@@ -27,4 +27,10 @@ class productcontroller extends Controller
         $data= product::where('id',$id)->get();
         return view('editproduct',['products'=>$data]);
     }
+    function filtered(Request $req)
+    {
+        $data= product::whereRaw('price > ?', $req->min-1)
+                        ->whereRaw('price < ?',$req->max+1)->get();
+        return view('filtered',['products'=>$data]);   
+    }
 }
