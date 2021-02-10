@@ -12,7 +12,7 @@
                     <h3>{{$item['name']}}</h3>
                     <h4>Price:{{$item['price']}}tk</h4>
                     <h4>Expiry Date:{{$item['expdate']}}</h4>
-                    <p><a href="#" class="btn btn-primary" role="button">Edit</a> <a href="#" class="btn btn-default" role="button">Delete</a></p>
+                    <p><a href="/edit/{{$item['id']}}" class="btn btn-primary" role="button">Edit</a> <a href="#" class="btn btn-default" role="button">Delete</a></p>
                 </div>
              </div>
          </div>

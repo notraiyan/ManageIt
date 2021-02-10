@@ -20,6 +20,10 @@ class userauth
         {
             return redirect('/');
         }
+        if($request->path()=='/' && !$request->session()->has('user'))
+        {
+            return redirect('login');
+        }
         return $next($request);
     }
 }

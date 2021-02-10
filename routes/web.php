@@ -29,3 +29,6 @@ Route::get("/",[productcontroller::class,'index']);
 Route::get("/add",[productcontroller::class,'add']);
 Route::post("/addproduct",[addproductcontroller::class,'addproduct']);
 Route::get("/search",[productcontroller::class,'search']);
+Route::get("/edit/{id}",[productcontroller::class,'edit']);
+Route::post("/editproduct",[addproductcontroller::class,'editproduct']);
+

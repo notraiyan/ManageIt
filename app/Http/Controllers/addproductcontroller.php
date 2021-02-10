@@ -19,10 +19,28 @@ class addproductcontroller extends Controller
             $product->image=$req->image;
             $product->expdate=$req->expdate;
             $product->save();
-            return redirect('login');
-        }
-        else{
             return redirect('/');
         }
+        else{
+            return redirect('/login');
+        }
     }
+    function editproduct(Request $req)
+    {
+        if($req->session()->has('user'))
+        {
+            //$product= product::where('id',$req->input('id'))->get();
+            $product= product::find($req->input('id'));
+            $product->name=$req->input('name');
+            $product->price=$req->input('price');
+            $product->image=$req->image;
+            $product->expdate=$req->expdate;
+            $product->save();
+            return redirect('/');
+        }
+        else{
+            return redirect('/login');
+        }
+    }
+    
 }
